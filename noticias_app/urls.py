@@ -9,5 +9,7 @@ router.register(r'noticias', NoticiasViewSet)
 
 urlpatterns = [
     path('noticias/', lista_noticias, name='lista_noticias'),
+
+    #API CRUD
     path('api/', include(router.urls)),
 ]
