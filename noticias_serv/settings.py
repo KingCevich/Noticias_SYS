@@ -79,7 +79,7 @@ WSGI_APPLICATION = 'noticias_serv.wsgi.application'
 
 DATABASES = {
     'default': dj_database_url.parse(
-        os.environ.get('DATABASE_URL', 'postgresql://user_noticias:pass123@localhost:5432/noticias_db')
+        os.environ.get('DATABASE_URL', 'postgresql://user_noticias:pass123@localhost:5432/noticias_db?sslmode=require')
     )
 }
 ## Para usar SQLite en vez de Postgre
